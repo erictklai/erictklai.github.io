@@ -1,4 +1,5 @@
 @import url("fontawesome-all.min.css");
+/*@import url("../../academicons-1.9.1/academicons.min.css")*/
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
@@ -161,6 +162,7 @@ input, select, textarea {
 	h4 {
 		font-size: 1.25em;
 		line-height: 1.5em;
+		font-weight:200;
 	}
 
 	h5 {
@@ -1790,14 +1792,15 @@ input, select, textarea {
 		/*color: #4acaa8;*/
 		/*color: #000080;*/
 		color: #2162cc;
-		font-size: 2.5em;
+		font-size: 3.0em;
+		margin-top:+0.25em;
 	}
 
 		header.major h2 + p {
 			color: #777;
-			font-size: 1.75em;
-			font-weight: 700;
-			margin-top: -0.75em;
+			font-size: 2.10em;
+			font-weight: 1200;
+			margin-top: -0.25em;
 		}
 
 /* Form */
@@ -2049,6 +2052,9 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+		.icon.brands2:before{
+			font-family: 'Academicons';
+		}
 
 /* Image */
 
@@ -2204,7 +2210,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 46vh;
 			border-radius: 0;
 		}
 
@@ -2749,16 +2755,19 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 3em;
+			height:46vh;
 		}
 
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 1.56em auto;
-				width: 8em;
+				width: 10em;
+				height: 23vh;
 			}
 
 			#header > header h1 {
-				font-size: 1.75em;
+				/*font-size: 1.75em;*/
+				font-size: 2vw;
 				margin: 0;
 			}
 
