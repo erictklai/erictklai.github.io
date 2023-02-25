@@ -23,10 +23,10 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Research</a></li>
-						<li><a href="#three">Publications</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -45,7 +45,7 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one">
+							<section id="about">
 								<div class="image main" data-position="center">
 									<img src="images/TyphoonMaysak2015.jpg" alt="" style="width:100%;"/>
 								</div>
@@ -56,17 +56,42 @@
 										Space and Atmospheric Physics Group<br/>
 										Imperial College London</p>
 									</header>
-									<h4>I am a Postdoctoral Research Associate working on tropical cyclone which is one of my main research interests. My current projects focus on TC structures and landfalls in the changing climate.<br/>
+									<h4>I am a Postdoctoral Research Associate working on tropical cyclone (TC) which is one of my main research interests.<br/>
 I have been a weather enthusiast since my early ages because many types of severe weather (particularly TC) have frequently and strongly influenced my hometown.</h4>
+<br>
 									<input type="button" value="Curriculum Vitae" onclick="window.open('https://erictklai.github.io/TKLai_CV.pdf');"/>
 								</div>
 							</section>
 							<!-- Two b-->
-								<section id="two">
+								<section id="research">
 									<div class="container">
 										<h3>Research highlight</h3>
-										<p>My PhD research focused on the eyewall replacement cycles (ERCs) of tropical cyclones. In particular, the project explored the underlying processes related to inner eyewall decay and outer eyewall intensification.</p>
-										<div class="features">
+										<!-- Tab links -->
+									  <div class="tab">
+									  <button class="tablinks" onclick="openSubfield(event, 'TCS')">TC Structural Changes</button>
+									  <button class="tablinks" onclick="openSubfield(event, 'TCERC')">TC Eyewall Replacement Cycles</button>
+									  <!--<button class="tablinks" onclick="openSubfield(event, 'Third')">Third</button>-->
+									  </div>
+
+								 	 <!-- Tab content -->
+									 <div id="TCS" class="tabcontent">
+									 <h5>TC Structural Changes in Recent Decades</h5>
+									 <p>My current projects focus on TC structure and landfall in the changing climate.</p>
+									 <div class="features">
+ 											<article>
+ 												<div class="inner2">
+ 													<h4>Weaker inner-core convection</h4>
+													<img src="images/CTHtrend.jpg" alt="" class="image2"/><br></br>
+ 													<p> Satellite observations of TC clouds indicate that the inner-core convection becomes weaker in the recent decades. Specifically, cloud fraction of tropical cyclone (TC) high thick clouds has recently declined in the inner core while the change in the outer region is much smaller (the above figure). The decline was most significant during the intensification period. The percentage change of TC inner-core cloud fraction of high cloud was similar to that of TC inner-core rain rate. The declining amount of inner-core high thick clouds and the decreasing inner-core rain rate suggest that the TC inner-core convection has become weaker. See <a href="https://doi.org/10.1029/2022GL102184" target="_blank">Lai and Toumi (2023)</a> for more details.</p>
+ 												</div>
+ 											</article>
+                  </div>
+									</div>
+
+								  <div id="TCERC" class="tabcontent">
+								  <h5>TC Eyewall Replacement Cycles</h5>
+									<p>My PhD research focused on the eyewall replacement cycles (ERCs) of tropical cyclones. In particular, the project explored the underlying processes related to inner eyewall decay and outer eyewall intensification.</p>
+									<div class="features">
 											<article>
 												<img src="images/TCclouds.png" alt="" class="image"/>
 												<div class="inner">
@@ -79,13 +104,13 @@ I have been a weather enthusiast since my early ages because many types of sever
 													<p>This is the real-time radar-satellite image of Hurricane Rita (2005). The inner and outer eyewalls are shown in deep red colour (source: Houze et al. 2006).
 												</div>
 											</article>
-											<article>
+											<!--<article>
 												<img src="images/Cutoff.png" alt="" class="image"/>
 												<div class="inner">
 													<h4>ERCs and the cut-off effect</h4>
 													<p>Once the outer eyewall is formed, it is able to weaken the inner eyewall by intercepting and consuming the radially inward flow with abundant moisture and angular momentum from the environment. This is called as the cut-off effect and is briefly described by the schematic diagram on the left (source: Didlake et al. 2017). When the inner eyewall dissipated, we describe that the outer eyewall replaced the inner eyewall.</p>
 												</div>
-											</article>
+											</article>-->
 											<article>
 												<img src="images/Wilmasim.jpg" alt="" class="image"/>
 												<div class="inner">
@@ -95,35 +120,42 @@ I have been a weather enthusiast since my early ages because many types of sever
 												<br/><br/>
 												<img src="images/Mbud.png" alt="" class="image"/>
 												<div class="inner">
-													<p>Detailed budget analyses of absolute angular momentum [e.g. the figure on the left from <a href="https://doi.org/10.1175/JAS-D-20-0168.1" target="_blank">Lai, Hendricks, Menelaou, and Yau (2021)</a>] revealed that the radial eddy transport of absolute angular momentum associated with the vorticity mixing of the type-2 instability can significantly weaken the inner eyewall. This effect of the type-2 instability can also work synergistically with the cut-off effect. See <a href="https://doi.org/10.1175/JAS-D-20-0168.1" target="_blank">Lai, Hendricks, Menelaou, and Yau (2021)</a> for more details.</p>
+													<p>Detailed budget analyses of absolute angular momentum [e.g. the figure on the left] revealed that the radial eddy transport of absolute angular momentum associated with the vorticity mixing of the type-2 instability can significantly weaken the inner eyewall. This effect of the type-2 instability can also work synergistically with the cut-off effect. See <a href="https://doi.org/10.1175/JAS-D-20-0168.1" target="_blank">Lai, Hendricks, Menelaou, and Yau (2021)</a> for more details.</p>
 												</div>
 												<br/><br/>
 												<img src="images/thefluxes.png" alt="" class="image"/>
 												<div class="inner">
-													<p>An in-depth analysis of the most unstable mode of a double-eyewall TC-like vortex revealed that the angular momentum flux was pointing outward from the inner eyewall to the outer eyewall. And there was also divergence of the flux over the inner eyewall and convergence of the flux over the outer eyewall [the figure on the left from <a href="https://doi.org/10.1175/JAS-D-20-0169.1" target="_blank">Lai, Hendricks, Yau, and Menelaou (2021)</a>]. This demonstrates that the origin of the intensity changes of the eyewalls is the angular momentum transport from the inner eyewall to the outer eyewall by the eddy processes associated with the type-2 instability. See <a href="https://doi.org/10.1175/JAS-D-20-0169.1" target="_blank">Lai, Hendricks, Yau, and Menelaou (2021)</a> for more details.</p>
+													<p>An in-depth analysis of the most unstable mode of a double-eyewall TC-like vortex revealed that the angular momentum flux was pointing outward from the inner eyewall to the outer eyewall. And there was also divergence of the flux over the inner eyewall and convergence of the flux over the outer eyewall [the figure on the left]. This demonstrates that the origin of the intensity changes of the eyewalls is the angular momentum transport from the inner eyewall to the outer eyewall by the eddy processes associated with the type-2 instability. See <a href="https://doi.org/10.1175/JAS-D-20-0169.1" target="_blank">Lai, Hendricks, Yau, and Menelaou (2021)</a> for more details.</p>
 												</div>
 												<br/><br/>
 												<img src="images/WScycle.png" alt="" class="image"/>
 												<div class="inner">
-													<p>The foregoing analyses focused on the first few hours after the onset of the type-2 instability. The long-term effect of the type-2 instability on ERCs is also explored. Both of the forced and unforced shallow-water experiments exhibit weakening–strengthening cycles (WS cycles) [e.g. the figure on the left from <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a>] in which the inner eyewalls weaken at first, and then reintensify and weaken again and so on. The trends of the outer eyewalls are reversed. The corresponding rates of change of tangential wind are very substantial during the WS cycles. For example, we see an inner eyewall weakening rate of 21 m/s in 4 hours. See <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a> for more details.</p>
+													<p>The foregoing analyses focused on the first few hours after the onset of the type-2 instability. The long-term effect of the type-2 instability on ERCs is also explored. Both of the forced and unforced shallow-water experiments exhibit weakening–strengthening cycles (WS cycles) [e.g. the figure on the left] in which the inner eyewalls weaken at first, and then reintensify and weaken again and so on. The trends of the outer eyewalls are reversed. The corresponding rates of change of tangential wind are very substantial during the WS cycles. For example, we see an inner eyewall weakening rate of 21 m/s in 4 hours. See <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a> for more details.</p>
 												</div>
 												<br/><br/>
 												<img src="images/EPflux.png" alt="" class="image"/>
 												<div class="inner">
-													<p>By using the mass-weighted budget of absolute angular momentum, we are able to express the eddy processes associated with the type-2 instability in terms of E–P flux divergence which is the dominant term of the budget. During the weakening phase of the WS cycle, there was E–P flux divergence over the inner eyewall and E–P convergence over the outer eyewall [the top panels of the figure on the left from <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a>]. The configuration was reversed during the strengthening phase (the bottom panels). These results suggest that the origin of the intensity changes of the two eyewalls during the WS cycle is the angular momentum transport between the two eyewalls. The angular momentum is conserved throughout the eddy processes. See <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a> for more details.</p>
+													<p>By using the mass-weighted budget of absolute angular momentum, we are able to express the eddy processes associated with the type-2 instability in terms of E–P flux divergence which is the dominant term of the budget. During the weakening phase of the WS cycle, there was E–P flux divergence over the inner eyewall and E–P convergence over the outer eyewall [the top panels of the figure on the left]. The configuration was reversed during the strengthening phase (the bottom panels). These results suggest that the origin of the intensity changes of the two eyewalls during the WS cycle is the angular momentum transport between the two eyewalls. The angular momentum is conserved throughout the eddy processes. See <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">Lai, Hendricks, and Yau (2021)</a> for more details.</p>
 												</div>
 											</article>
 										</div>
+								  </div>
+
+								  <!--<div id="Third" class="tabcontent">
+								  <h3>Third</h3>
+								  <p>Testing.</p>
+								</div>-->
+
 									</div>
 								</section>
 
 						<!--Three-->
-						<section id="three">
+						<section id="publications">
 							<div class="container">
 								<h3>Publications</h3>
                 </br>
 								<ul>
-								<li><b>Lai, T.-K.</b>, and R. Toumi, 2023: Has there been a recent shallowing of tropical cyclones?. <i>Geophys. Res. Lett.</i>, in press.</li><br/>
+								<li><b>Lai, T.-K.</b>, and R. Toumi, 2023: Has There Been a Recent Shallowing of Tropical Cyclones?. <i>Geophys. Res. Lett.</i>, <b>50</b>, e2022GL102184, <a href="https://doi.org/10.1029/2022GL102184" target="_blank">doi:10.1029/2022GL102184</a>.</li><br/>
 								<li><b>Lai, T.-K.</b>, E. A. Hendricks, and M. K. Yau, 2021: Long-Term Effect of Barotropic Instability across the Moat in Double-Eyewall Tropical Cyclone-Like Vortices in Forced and Unforced Shallow-Water Models. <i>J. Atmos. Sci.</i>, <b>78</b>, 4103–4126, <a href="https://doi.org/10.1175/JAS-D-21-0065.1" target="_blank">doi:10.1175/JAS-D-21-0065.1</a>.</li><br/>
 								<li><b>Lai, T.-K.</b>, E. A. Hendricks, M. K. Yau, and K. Menelaou, 2021: Roles of Barotropic Instability across the Moat in Inner Eyewall Decay and Outer Eyewall Intensification: Essential Dynamics. <i>J. Atmos. Sci.</i>, <b>78</b>, 1411-1428, <a href="https://doi.org/10.1175/JAS-D-20-0169.1" target="_blank">doi:10.1175/JAS-D-20-0169.1</a>.</li><br/>
 								<li><b>Lai, T.-K.</b>, E. A. Hendricks, K. Menelaou, and M. K. Yau, 2021: Roles of Barotropic Instability across the Moat in Inner Eyewall Decay and Outer Eyewall Intensification: Three-Dimensional Numerical Experiments. <i>J. Atmos. Sci.</i>, <b>78</b>, 473-496, <a href="https://doi.org/10.1175/JAS-D-20-0168.1" target="_blank">doi:10.1175/JAS-D-20-0168.1</a>.</li><br/>
@@ -133,7 +165,7 @@ I have been a weather enthusiast since my early ages because many types of sever
 							</div>
 						</section>
 							<!-- Four b -->
-							<section id="four">
+							<section id="contact">
 								<div class="container">
 									<h3> Contact</h3>
 									<p>eric dot lai at imperial dot ac dot uk</p>
@@ -164,6 +196,9 @@ I have been a weather enthusiast since my early ages because many types of sever
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			document.getElementsByClassName("tablinks")[0].click();
+			</script>
 
 	</body>
 </html>
