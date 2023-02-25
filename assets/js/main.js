@@ -155,7 +155,6 @@
 
 			}
 		});
-
 })(jQuery);
 
 function openSubfield(evt, subfieldName) {
