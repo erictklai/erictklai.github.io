@@ -3372,14 +3372,15 @@ input, select, textarea {
 	}
 	/* Style the tab */
  .tab {
-   overflow: hidden;
-	 /*overflow-x:scroll;*/
-   border: 0px solid #ccc;
+   overflow: visible;
+   /*overflow: hidden;*/
+   /*overflow-x:scroll;*/
+   border: 1px solid #ccc;
    /*background-color: #f1f1f1;*/
 	 background-color: none;
 	 width: 100%;
 	 border-bottom: 1px solid #ccc;
-	 height:50px;
+	 height:100px;
  }
 
  /* Style the buttons that are used to open the tab content */
@@ -3390,13 +3391,13 @@ input, select, textarea {
    outline: none;
    cursor: pointer;
    /*padding: 14px 16px;*/
-	 padding: 2% 4%;
+   padding: 2% 4%;
    transition: 0.3s;
-	 width: 33.3%;
-	 height:100%;
-	 text-align: center;
-	 border-radius: 0px;
-	 font-size: 65%;
+   width: 33.33%;
+   height:50%;
+   text-align: center;
+   border-radius: 0px;
+   font-size: 65%;
  }
 
  /* Change background color of buttons on hover */
